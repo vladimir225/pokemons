@@ -1,0 +1,99 @@
+.container {
+  position: relative;
+  margin: auto;
+  width: 1280px;
+  display: flex;
+  align-items: center;
+  height: 768px;
+}
+
+.card {
+  position: absolute;
+  height: 200px;
+  background-color: #15a8ec;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 5px 62px 39px -16px rgba(0, 0, 0, 0.63);
+  z-index: 5;
+  width: 100px;
+  left: 200px;
+  transform-origin: bottom;
+}
+
+.card-1 {
+  animation: c7 14s linear 0s infinite;
+}
+
+.card-2 {
+  animation: c7 14s linear -2s infinite;
+}
+
+.card-3 {
+  animation: c7 14s linear -4s infinite;
+}
+
+.card-4 {
+  animation: c7 14s linear -6s infinite;
+}
+
+.card-5 {
+  animation: c7 14s linear -8s infinite;
+}
+
+.card-6 {
+  animation: c7 14s linear -10s infinite;
+}
+
+.card-7 {
+  animation: c7 14s linear -12s infinite;
+}
+
+.card__img {
+  width: 80px;
+  height: 80px;
+}
+
+.card__number {
+  font-size: 40px;
+}
+
+.cards-holder:hover .card {
+  animation-play-state: paused;
+}
+
+@keyframes c7 {
+  0% {
+    transform: translateX(0%) scale(0.8);
+    z-index: 10;
+  }
+
+  12.5% {
+    transform: translateX(85%) scale(1);
+  }
+
+  25% {
+    transform: translateX(190%) scale(1.2);
+  }
+
+  50% {
+    transform: translateX(410%) scale(1.2);
+  }
+
+  61% {
+    transform: translateX(510%) scale(1.2);
+  }
+
+  73.5% {
+    transform: translateX(615%) scale(1);
+  }
+
+  86% {
+    transform: translateX(700%) scale(0.8);
+  }
+
+  100% {
+    transform: translateX(0%) scale(0.8);
+    z-index: 1;
+  }
+}
